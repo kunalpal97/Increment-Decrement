@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff; /* Clear background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: #f9f9f9; /* Slightly off-white for a subtle card color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow for a lighter effect */
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: cardAnimation 2s ease infinite alternate;
+    width: 300px; /* Fixed width for card to centralize content */
+}
+
+@keyframes cardAnimation {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-10px); }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.input-box {
+    width: 60%; /* Smaller width for the input box */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 20px;
+    border: 2px solid rgba(1, 1, 1, 0.2); /* Lighter border */
+    border-radius: 5px;
+    font-size: 16px; /* Slightly smaller font size */
+    text-align: center; /* Center text inside the input */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px; /* Adjusted padding for smaller buttons */
+    margin: 5px; /* Reduced margin */
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+.btn:hover {
+    background-color: #85bffd;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
